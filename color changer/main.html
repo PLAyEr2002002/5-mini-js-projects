@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+        button{
+            margin: 5px;
+            font-size: 50px;
+        }
+        #Red{
+            background-color: red;
+        }
+        #Green{
+            background-color: green;
+        }
+        #Blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Color Changer</h1>
+    <button id="Red" onclick="setColor('red');">Red</button>
+    <button id="Green" onclick="setColor('green');">Green</button>
+    <button id="Blue" onclick="setColor('blue');">Blue</button>
+    <button onclick="randomColor();">Random</button>
+    <button id="own" onclick="setColor(prompt('Enter your own color')); 
+    element= document.getElementById('own');
+    element.style.backgroundColor = prompt('Enter your own color');">Enter your own</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
