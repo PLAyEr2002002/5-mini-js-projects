@@ -29,10 +29,14 @@
     <button id="Red" onclick="setColor('red');">Red</button>
     <button id="Green" onclick="setColor('green');">Green</button>
     <button id="Blue" onclick="setColor('blue');">Blue</button>
-    <button onclick="randomColor();">Random</button>
-    <button id="own" onclick="setColor(prompt('Enter your own color')); 
+
+    <button id="random" onclick="randomColor();">Random</button>
+
+    <button id="own" 
+    onclick="setColor(c= prompt('Enter your own color')); 
     element= document.getElementById('own');
-    element.style.backgroundColor = prompt('Enter your own color');">Enter your own</button>
+    element.style.backgroundColor = `${c}`;">
+    Enter your own</button>
 
     <script src="main.js"></script>
 </body>
