@@ -14,5 +14,5 @@ function check(){
     } else{
         alert('Not Palindrome try again')
     }
-    value=""
+    input.value=""
 }
