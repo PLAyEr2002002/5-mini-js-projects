@@ -18,6 +18,7 @@ function updateClock() {
     setTime()
 }
 function startClock() {
+    if (interval) stopClock()
     interval = setInterval(updateClock, 1000);
 }
 
@@ -26,5 +27,7 @@ function stopClock() {
 }
 
 function resetClock() {
-   
+   stopClock()
+   secondsElapsed=0
+   setTime()
 }
